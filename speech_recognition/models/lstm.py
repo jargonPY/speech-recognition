@@ -16,7 +16,14 @@ import json
   - Ensembles
 
   1. need to log / visualize the preprocessed data, make sure its properly processed
-  2. need to create a local pipeline for testing/debugging 
+  2. need to create a local pipeline for testing/debugging
+
+  Logging is the process to capture the flow of the code. When a function starts to exectute
+  all the passed arguments values can be logged, the time the function starts or its
+  return values.
+    - allows to differentiate between prod environment and dev environment
+    - provides module names where the log comes from
+    - control to differentiate logs on the basis of severity
 
   MODELS = {
     model_name: {
@@ -29,17 +36,37 @@ import json
 """
 
 class ModelsMetadata():
-  pass
 
-  def open_file():
-    with open("models_metadata.json") as f:
-      models_metadata = json.load(f)
+  FILE_PATH = str(pathlib.Path(__file__).parent) + "/" + "models_metadata.json"
 
-  def update_file(data):
-    with open("models_metadata.json", "w") as f:
-      json.dump(data, f)
+  def __init__(self):
+    if not os.path.exists(ModelsMetadata.FILE_PATH):      
+      with open(ModelsMetadata.FILE_PATH, "w") as f:
+        json.dump({}, f)
+      
+      with open(ModelsMetadata.FILE_PATH) as f:
+        self.models_metadata = json.load(f)
 
-class BaseModel():
+  def check_version_exists(self, model_name, version):
+    return self.models_metadata[model_name].latest_version >= version
+
+  def get_latest_model_version(self, model_name):
+    if model_name in self.models_metadata:
+      return self.models_metadata[model_name].latest_version
+
+  def update_model_version(self, model_name):
+    with open(ModelsMetadata.FILE_PATH, "w") as f:
+      self.models_metadata[model_name].latest_version += 1
+      json.dump(self.models_metadata, f)
+    return self.models_metadata[model_name].latest_version
+
+  def add_new_model(self, model_name):
+    with open(ModelsMetadata.FILE_PATH, "w") as f:
+      self.models_metadata[model_name] = {"latest_version": 0}
+      json.dump(self.models_metadata, f)
+    return 0
+
+class BaseModel(ModelsMetadata):
 
   def __init__(self, model_name, load_model, version):
     """
@@ -55,32 +82,22 @@ class BaseModel():
       version and params should not both be specified
     """
 
-    self.version = 0
+    super().__init__()
     self.model_path = str(pathlib.Path(__file__).parent) + "/" + model_name
 
-    if not os.path.exists(str(pathlib.Path(__file__).parent) + "/models_metadata.json"):
-      pathlib.Path("models_metadata.json").touch()
-    with open("models_metadata.json") as f:
-      self.models_metadata = json.load(f)
-
     if load_model:
-      if version:
+      if version and self.check_version_exists(model_name, version):
         self.version = version
       else:
-        self.version = config.MODELS[model_name].latest_version
-
-      # make sure a version exists
-      self.version_path = self.model_path + f"/version_{self.version}"
-      assert os.path.exists(self.version_path)
+        self.version = self.get_latest_model_version(model_name)
     
     else:
       if not os.path.exists(self.model_path):
         os.mkdir(self.model_path)
-        config.MODELS[model_name] = {"latest_version": self.version}
+        self.version = self.add_new_model(model_name)
 
       else:
-        self.version = config.MODELS[model_name].latest_version + 1
-        config.MODELS[model_name].latest_version += 1
+        self.version = self.update_model_version(model_name)
 
       self.version_path = self.model_path + f"/version_{self.version}"
       os.mkdir(self.version_path)
@@ -116,7 +133,7 @@ class BaseModel():
     history = self.model.fit(train_generator,
                         validation_data=val_generator,
                         epochs=epochs,
-                        #max_queue_size=1,
+                        max_queue_size=1,
                         workers=6,
                         use_multiprocessing=True,
                         callbacks=[checkpoint])
