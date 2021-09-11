@@ -1,10 +1,13 @@
+import sys
+import pathlib
+
 #----------------------------- Config --------------------------------------#
 
-AUTIO_TRAIN_PATH = ""
-TEXT_TRAIN_PATH = ""
+AUTIO_TRAIN_PATH = "data/audio_files/train"
+TEXT_TRAIN_PATH = "data/text_files/train"
 
-AUDIO_TEST_PATH = ""
-TEXT_TEST_PATH = ""
+AUDIO_TEST_PATH = "data/audio_files/test"
+TEXT_TEST_PATH = "data/text_files/test"
 
 
 NUM_CLASSES = 30

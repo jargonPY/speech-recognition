@@ -1,36 +1,29 @@
 import numpy as np
 import os
 import scipy.fftpack as pack
-from load_audio import load_audio
+import sys
+import pathlib
+sys.path.append(str(pathlib.Path(__file__).parents[2]))
+import speech_recognition.utils as utils 
+import speech_recognition.config as config
 
 
 class PreprocessAudio():
 
-    def __init__(self, file_name, frame_size=0.025, frame_stride=0.01):
+    def __init__(self, frame_size=0.025, frame_stride=0.01):
         
-        self.sample_rate, self.data = PreprocessAudio.load_audio(file_name)
-        self.n = len(self.data)
-
         self.frame_size = frame_size
         self.frame_stride = frame_stride
-        # number of samples per window
-        self.window_size = int(self.sample_rate * self.frame_size)
-        # number of samples to skip per stride
-        self.shift_size = int(self.sample_rate * self.frame_stride)
 
-    @staticmethod
-    def load_audio(file_name):
-
-      if '.mp3' in file_name:
-          AudioSegment.from_mp3(file_name).export(os.path.dirname(file_name), format="wav")
-          rate, audio = wav.read(file_name.replace(".mp3", ".wav"))
-      elif '.wav' in file_name:
-          rate, audio = wav.read(file_name)
-      else:
-          raise ValueError('Can not open the provided file extension')
-      if len(audio.shape) == 2:
-          audio = np.mean(audio, axis=1)
-      return rate, audio
+    def preprocess_file(self, file_name):
+      
+      self.sample_rate, self.data = utils.load_audio(file_name)
+      self.number_of_samples = len(self.data)
+      # number of samples per window
+      self.window_size = int(self.sample_rate * self.frame_size)
+      # number of samples to skip per stride
+      self.shift_size = int(self.sample_rate * self.frame_stride)
+      return self.get_filter_banks() # add more preprocessing options
 
     @staticmethod
     def hz_to_mel(hz):
@@ -169,17 +162,16 @@ class PreprocessAudio():
         filter_banks = self.mel_binning(spectrum, nfft)
         return filter_banks
 
-def apply_preprocessing():
-  path_to_audio_files = "/content/drive/MyDrive/Speech Recognition/Dataset/Timeit/TRAIN/audio_files"
-  path_to_preprocessed_files = "/content/drive/MyDrive/Speech Recognition/Dataset/Timeit/TRAIN/preprocessed_audio"
+    @staticmethod
+    def apply_batch_preprocessing():
+      path_to_audio_files = "/content/drive/MyDrive/Speech Recognition/Dataset/Timeit/TRAIN/audio_files"
+      path_to_preprocessed_files = "/content/drive/MyDrive/Speech Recognition/Dataset/Timeit/TRAIN/preprocessed_audio"
 
-  files = os.listdir(path_to_audio_files)
+      files = os.listdir(path_to_audio_files)
 
-  for index, file in enumerate(files):
-    path_to_file = path_to_audio_files + "/" + file
-    path_to_save = path_to_preprocessed_files + "/" + file.split(".")[0]
-    preprocessed = PreprocessAudio(path_to_file).get_filter_banks()
-    np.save(path_to_save, preprocessed)
-    print("Files Done: ", index + 1, "Files Remaining: ", len(files) - (index + 1))
-
-apply_preprocessing()
+      for index, file in enumerate(files):
+        path_to_file = path_to_audio_files + "/" + file
+        path_to_save = path_to_preprocessed_files + "/" + file.split(".")[0]
+        preprocessed = PreprocessAudio().preprocess_file(path_to_file)
+        np.save(path_to_save, preprocessed)
+        print("Files Done: ", index + 1, "Files Remaining: ", len(files) - (index + 1))

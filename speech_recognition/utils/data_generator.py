@@ -6,6 +6,7 @@ import pathlib
 import random
 sys.path.append(str(pathlib.Path(__file__).parents[2]))
 import speech_recognition.config as config
+from speech_recognition.preprocessing import PreprocessAudio, PreprocessText, preprocess_text
 
 """
 Sequence are a safer way to do multiprocessing. This structure guarantees that the network will only train 
@@ -23,7 +24,7 @@ class DataGenerator(tf.keras.utils.Sequence):
     self.one_hot = one_hot
     self.num_calls = 0
 
-  def open_files(self, index):
+  def open_preprocessed_files(self, index):
     
     audio_data = []
     input_text_data = []
@@ -44,6 +45,33 @@ class DataGenerator(tf.keras.utils.Sequence):
     else:
       input_text_data = np.asarray(input_text_data)
 
+    return audio_data, input_text_data, output_text_data
+
+  def preprocess_files(self, index):
+
+    audio_data = []
+    input_text_data = []
+    output_text_data = []
+
+    preprocess_audio = PreprocessAudio()
+    preprocess_text = PreprocessText()
+    for sample in self.samples[index * self.batch_size:(index + 1) * self.batch_size]:
+      audio = preprocess_audio.preprocess_file(sample[0])
+      input_text, output_text = preprocess_text.preprocess_text(sample[1])
+      audio_data.append(audio)
+      input_text_data.append(input_text)
+      output_text_data.append(output_text)
+
+    # zero padding
+    audio_data = tf.keras.preprocessing.sequence.pad_sequences(audio_data, padding='post')
+    input_text_data = tf.keras.preprocessing.sequence.pad_sequences(input_text_data, padding='post')
+    output_text_data = tf.keras.preprocessing.sequence.pad_sequences(output_text_data, padding='post')
+    # one-hot encode output (necessary for categorical cross-entropy)
+    output_text_data = tf.keras.utils.to_categorical(output_text_data, config.NUM_CLASSES)
+    # one-hot encode input (necessary if there is no embedding layer)
+    if self.one_hot:
+      input_text_data = tf.keras.utils.to_categorical(input_text_data, config.NUM_CLASSES)
+    
     return audio_data, input_text_data, output_text_data
   
   def on_epoch_end(self):
@@ -66,7 +94,7 @@ class DataGenerator(tf.keras.utils.Sequence):
       returns batch, (input, output) value pair, at position index
         - returned values must be numpy arrays
     """
-    audio_data, input_text_data, output_text_data = self.open_files(index)
+    audio_data, input_text_data, output_text_data = self.preprocess_files(index)
     print("Shapes: ", audio_data.shape, input_text_data.shape, output_text_data.shape, "\n")
     return (audio_data, input_text_data), output_text_data
 

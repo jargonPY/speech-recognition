@@ -1,2 +1,2 @@
-from preprocess_text import preprocess_text
-from preprocess_audio import PreprocessAudio
+from speech_recognition.preprocessing.preprocess_audio import PreprocessAudio
+from speech_recognition.preprocessing.preprocess_text import PreprocessText

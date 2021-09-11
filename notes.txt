@@ -1,0 +1,44 @@
+*-------- Ideas ------------*
+    1. Different preprocessing techniques during training (data augmentation)
+    2. Ensembles
+    3. JSON file should maintain a list of model test scores so that it can be easily
+       to run best or 10 best
+        - ModelsMetaData needs a method that will be called from test() to update this variable
+
+*-------- Questions --------*
+    1. when saving model:
+        - save best or save per epoch (if best overwrite old files)?
+        - what other data to keep track of (number of total epochs, train/val history)?
+            - this is also returned as part of the history object
+    2. how much of this is necessary before beginning proper training?
+    3. How to implement for Jupyter notebooks?
+
+*-------- To Do ------------*
+    1. log preprocessed data and incorporate data validation 
+        - need to make sure preprocessing is performed as expected
+    2. develop a global logging system with debug/test and training modes
+    3. build visualization tools for audio data
+    4. allow for a global variable that indicates debugging, which will automatically ensure
+       smaller batch sizes and faster run times
+        - global variable or environment variable?
+    5. metrics and visualizations for comparing models
+    6. incorporate TensorBoard
+        - how will it work if only save weights and the not the entire model?
+        - does TensorBoard store results? (if so this will allow one to pick up training but see the entire history)
+    7. look into methods for searching the space of model parameters
+
+*-------- Next Steps -------*
+Eli:
+    1. allow to pass model parameters from terminal 
+        - possibly large number of parameters
+        - parameters may be model dependent
+        Implementation:
+            - each model should have a class variable describing
+              all the model parameters and setting each one with a default value
+            - to change the value one can directly modify the variable (not recommended)
+              or declare an environment variable that can then be passed into the model
+            - have a helper function that print model parameters to terminal
+            - have general helper functions that remind the user of the commands to pass
+
+    2. metadata file should contain the parameters of the model for each version
+Harsh:
