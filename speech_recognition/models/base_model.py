@@ -7,6 +7,7 @@ sys.path.append(str(pathlib.Path(__file__).parents[2]))
 import speech_recognition.config as config
 import speech_recognition.utils as utils
 from models.model_metadata import ModelsMetadata
+from models.logs_callback import LogsCallback
 
 class BaseModel(ModelsMetadata):
 
@@ -23,6 +24,7 @@ class BaseModel(ModelsMetadata):
     """
 
     super().__init__()
+    self.model_name = model_name
     self.model_path = str(pathlib.Path(__file__).parent) + "/" + model_name
 
     if load_model:
@@ -77,6 +79,8 @@ class BaseModel(ModelsMetadata):
       save_weights_only=True,
       save_freq="epoch"
     )
+
+    logsCallback = LogsCallback(self.version, self.model_name)
     
     self.model.compile(optimizer="rmsprop", loss="categorical_crossentropy", metrics=["accuracy"])
 
@@ -86,7 +90,7 @@ class BaseModel(ModelsMetadata):
                         max_queue_size=1,
                         workers=1,
                         use_multiprocessing=True,
-                        callbacks=[checkpoint])
+                        callbacks=[checkpoint, logsCallback])
     return history
 
   def test(self):

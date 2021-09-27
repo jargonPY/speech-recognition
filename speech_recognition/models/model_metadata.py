@@ -53,3 +53,9 @@ class ModelsMetadata():
     with open(ModelsMetadata.FILE_PATH, "w") as f:
       json.dump(self.models_metadata, f)
     return 0
+
+  def append_training_metric(self, model_name, model_version, metric, value):
+    self.models_metadata[model_name][f"version_{model_version}"]["train"][metric].append(value)
+    # Need to check if field exists (use on_train_begin in callback?)
+    # Use context manager to avoid loading/saving json with every call
+    # Find a way for model_name and model_version to be included

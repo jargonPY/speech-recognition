@@ -41,4 +41,8 @@ Eli:
             - have general helper functions that remind the user of the commands to pass
 
     2. metadata file should contain the parameters of the model for each version
+    3. fix models_metadata saving
+    4. create a callback to store epoch performance in the models_metadata file
 Harsh:
+    1. implement google drive
+    2. research evaluation metrics
