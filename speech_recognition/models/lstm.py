@@ -2,17 +2,17 @@ import sys
 import pathlib
 import tensorflow as tf
 from tensorflow.keras.layers import Input, Embedding, LSTM, Dense, Bidirectional, Concatenate
+sys.path.append(str(pathlib.Path(__file__).parents[1]))
 sys.path.append(str(pathlib.Path(__file__).parents[2]))
-import speech_recognition.config as config
+import config
 from models.base_model import BaseModel
-
 class VanillaLSTM(BaseModel):
 
   MODEL_NAME = "vanilla_lstm"
 
-  def __init__(self, load_model, version, audio_dim=26, hidden_dim=32):
-
-    super().__init__(VanillaLSTM.MODEL_NAME, load_model, version)
+  def __init__(self, load_version, audio_dim=26, hidden_dim=32):
+    
+    super().__init__(VanillaLSTM.MODEL_NAME, load_version)
 
     # training encoder
     encoder_inputs = Input(shape=(None, audio_dim), name="audio-input")
@@ -42,5 +42,5 @@ class VanillaLSTM(BaseModel):
     decoder_outputs = decoder_dense(decoder_outputs)
     self.decoder_model = tf.keras.Model([decoder_inputs, dec_states_input], [decoder_outputs, decoder_states])
     
-    if load_model:
+    if load_version:
       self.load_weights()

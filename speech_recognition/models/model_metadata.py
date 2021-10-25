@@ -6,13 +6,6 @@ import speech_recognition.config as config
 import json
 
 """
-  Logging is the process to capture the flow of the code. When a function starts to exectute
-  all the passed arguments values can be logged, the time the function starts or its
-  return values.
-    - allows to differentiate between prod environment and dev environment
-    - provides module names where the log comes from
-    - control to differentiate logs on the basis of severity
-
   MODELS = {
     model_name: {
       version: 4,
@@ -22,7 +15,6 @@ import json
     }
   }
 """
-
 class ModelsMetadata():
 
   FILE_PATH = str(pathlib.Path(__file__).parent) + "/" + "models_metadata.json"
@@ -55,7 +47,8 @@ class ModelsMetadata():
     return 0
 
   def append_training_metric(self, model_name, model_version, metric, value):
-    self.models_metadata[model_name][f"version_{model_version}"]["train"][metric].append(value)
+    pass
+    #self.models_metadata[model_name][f"version_{model_version}"]["train"][metric].append(value)
     # Need to check if field exists (use on_train_begin in callback?)
     # Use context manager to avoid loading/saving json with every call
     # Find a way for model_name and model_version to be included

@@ -7,6 +7,7 @@ import random
 sys.path.append(str(pathlib.Path(__file__).parents[2]))
 import speech_recognition.config as config
 from speech_recognition.preprocessing import PreprocessAudio, PreprocessText, preprocess_text
+from utils.generate_logger import generate_logger
 
 """
 Sequence are a safer way to do multiprocessing. This structure guarantees that the network will only train 
@@ -15,6 +16,7 @@ once on each sample per epoch which is not the case with generators.
 https://medium.com/analytics-vidhya/write-your-own-custom-data-generator-for-tensorflow-keras-1252b64e41c3
 """
 
+logger = generate_logger(__name__, "main.log")
 class DataGenerator(tf.keras.utils.Sequence):
 
   def __init__(self, samples, batch_size, one_hot=True):
@@ -22,15 +24,14 @@ class DataGenerator(tf.keras.utils.Sequence):
     self.samples = samples
     self.batch_size = batch_size
     self.one_hot = one_hot
-    self.num_calls = 0
 
   def open_preprocessed_files(self, index):
-    
+    # load_preprocessed_files
     audio_data = []
     input_text_data = []
     output_text_data = []
 
-    print("Getting samples from: ", index * self.batch_size, " to: ", (index + 1) * self.batch_size, "\n")
+    logger.info(f"Getting samples from: {index * self.batch_size} to: {(index + 1) * self.batch_size}")
 
     for sample in self.samples[index * self.batch_size:(index + 1) * self.batch_size]:
       audio_data.append(np.load(sample[0]))
@@ -48,6 +49,9 @@ class DataGenerator(tf.keras.utils.Sequence):
     return audio_data, input_text_data, output_text_data
 
   def preprocess_files(self, index):
+    # preprocess_real_time
+
+    logger.info(f"Index: {index}. Getting samples from: {index * self.batch_size} to: {(index + 1) * self.batch_size}")
 
     audio_data = []
     input_text_data = []
@@ -95,7 +99,7 @@ class DataGenerator(tf.keras.utils.Sequence):
         - returned values must be numpy arrays
     """
     audio_data, input_text_data, output_text_data = self.preprocess_files(index)
-    print("Shapes: ", audio_data.shape, input_text_data.shape, output_text_data.shape, "\n")
+    logger.info(f"Shapes: {audio_data.shape, input_text_data.shape, output_text_data.shape}")
     return (audio_data, input_text_data), output_text_data
 
   @staticmethod  
@@ -116,5 +120,5 @@ class DataGenerator(tf.keras.utils.Sequence):
     train_set = file_names[:split_index]
     val_set = file_names[split_index:]
 
-    print("Train set length: ", len(train_set), "Val set length: ", len(val_set))
+    logger.info(f"Train set length: {len(train_set)}, Val set length: {len(val_set)}")
     return train_set, val_set

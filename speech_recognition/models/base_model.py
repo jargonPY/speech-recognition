@@ -1,17 +1,19 @@
 import sys
 import pathlib
 import os
+import datetime
 import numpy as np
 import tensorflow as tf
+sys.path.append(str(pathlib.Path(__file__).parents[1]))
 sys.path.append(str(pathlib.Path(__file__).parents[2]))
-import speech_recognition.config as config
-import speech_recognition.utils as utils
-from models.model_metadata import ModelsMetadata
+import config
+import utils
 from models.logs_callback import LogsCallback
 
-class BaseModel(ModelsMetadata):
+logger = utils.generate_logger(__name__, "main.log")
+class BaseModel():
 
-  def __init__(self, model_name, load_model, version):
+  def __init__(self, model_name, load_version):
     """
       - store version path
       If dir does not exist:
@@ -20,40 +22,44 @@ class BaseModel(ModelsMetadata):
         - create version dir
       If dir does exist:
         - if version number specified in arg load version else load latest
-        - if new params are specified create new version (should be decided within class or within main?) --> class
     """
 
-    super().__init__()
     self.model_name = model_name
     self.model_path = str(pathlib.Path(__file__).parent) + "/" + model_name
+    self.version = None
+    self.version_path = None
 
-    if load_model:
-      if version and self.check_version_exists(model_name, version):
-        self.version = version
+    if load_version:
+      if load_version == "latest":
+        self.version = config.document.get_latest_version(model_name)
+
+      elif config.document.check_version_exists(model_name, load_version):
+        self.version = load_version
+
       else:
-        self.version = self.get_latest_model_version(model_name)
-    
+        logger.error("Version specified does not exist")
+        raise ValueError("The version does not exist")
       self.version_path = self.model_path + f"/version_{self.version}"
 
     else:
       if not os.path.exists(self.model_path):
         os.mkdir(self.model_path)
-        self.version = self.add_new_model(model_name)
+        config.document.add_model(model_name)
+        self.version = 1
 
       else:
-        # if this is the first version of the model, make sure to include --load_model
-        self.version = self.update_model_version(model_name)
+        self.version = config.document.update_version(model_name)
 
       self.version_path = self.model_path + f"/version_{self.version}"
       os.mkdir(self.version_path)
-      
-  def update_version(self):
-    pass
+
+      logger.info(f"model: {self.model_name}-{self.model_path}, version: {self.version}-{self.version_path}")
 
   def load_weights(self):
 
     if os.path.exists(self.version_path):
       self.model.load_weights(self.version_path + "/checkpoint")
+      # log some of the model weights/layers to ensure proper loading of each layer
 
   def fit(self, split=0.9, batch_size=128, epochs=2):
     """
@@ -74,13 +80,17 @@ class BaseModel(ModelsMetadata):
     val_generator = utils.DataGenerator(val_set, batch_size, one_hot=True)
 
     checkpoint = tf.keras.callbacks.ModelCheckpoint(
-      #self.version_path + "/{epoch:02d}-{val_loss:.2f}",
-      self.version_path + "/checkpoint",
+      #self.version_path + "/{epoch:02d}",
+      self.version_path + "/checkpoint", # when saving every version also change load_weights
       save_weights_only=True,
       save_freq="epoch"
     )
 
-    logsCallback = LogsCallback(self.version, self.model_name)
+    log_dir = f"{self.version_path}/logs/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+    # to open tensorboard: tensorboard --logdir={working_dir/.../version_path/logs/}
+    tensorboard = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
+
+    logsCallback = LogsCallback(self.model_name, self.version)
     
     self.model.compile(optimizer="rmsprop", loss="categorical_crossentropy", metrics=["accuracy"])
 
@@ -90,7 +100,7 @@ class BaseModel(ModelsMetadata):
                         max_queue_size=1,
                         workers=1,
                         use_multiprocessing=True,
-                        callbacks=[checkpoint, logsCallback])
+                        callbacks=[checkpoint, logsCallback, tensorboard])
     return history
 
   def test(self):

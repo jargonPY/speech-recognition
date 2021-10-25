@@ -1,8 +1,5 @@
-import sys
-import pathlib
 
 #----------------------------- Config --------------------------------------#
-
 AUTIO_TRAIN_PATH = "data/audio_files/train"
 TEXT_TRAIN_PATH = "data/text_files/train"
 
@@ -25,3 +22,10 @@ INDEX_TO_TOKEN = {
   17: 'o', 18: 'p', 19: 'q', 20: 'r', 21: 's', 22: 't', 23: 'u', 24: 'v',
   25: 'w', 26: 'x', 27: 'y', 28: 'z', 29: '<space>'
 }
+
+#-------------------------- Model Document Object --------------------------------#
+document = None
+
+def init_document(document_object):
+  global document
+  document = document_object
