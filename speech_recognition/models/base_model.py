@@ -3,12 +3,15 @@ import pathlib
 import os
 import datetime
 import numpy as np
+from numpy.lib.recfunctions import _append_fields_dispatcher
 import tensorflow as tf
+from tensorboard import program
 sys.path.append(str(pathlib.Path(__file__).parents[1]))
 sys.path.append(str(pathlib.Path(__file__).parents[2]))
 import config
 import utils
 from models.logs_callback import LogsCallback
+from speech_recognition.preprocessing import PreprocessAudio
 
 logger = utils.generate_logger(__name__, "main.log")
 class BaseModel():
@@ -86,9 +89,15 @@ class BaseModel():
       save_freq="epoch"
     )
 
-    log_dir = f"{self.version_path}/logs/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+    #log_dir = f"{self.version_path}/logs/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+    log_dir = f"{self.version_path}/logs"
     # to open tensorboard: tensorboard --logdir={working_dir/.../version_path/logs/}
-    tensorboard = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
+    #tensorboard = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
+
+    # tb = program.TensorBoard()
+    # tb.configure(argv=[None, '--logdir', log_dir])
+    # url = tb.launch()
+    # print(f"Tensorflow listening on {url}")
 
     logsCallback = LogsCallback(self.model_name, self.version)
     
@@ -100,42 +109,57 @@ class BaseModel():
                         max_queue_size=1,
                         workers=1,
                         use_multiprocessing=True,
-                        callbacks=[checkpoint, logsCallback, tensorboard])
+                        callbacks=[checkpoint, logsCallback])
     return history
+
+ 
+  def inference(self):
+    # on entire data set using predict() method
+    pass
+
+  def evaluate(self):
+    pass
 
   def test(self):
     pass
 
-  def predict(self, audio_input):
-    # Encode the input as state vectors.
-    encoder_state = self.encoder_model.predict(audio_input)
+  def predict(self):
+    train_set, val_set = utils.DataGenerator.get_file_names()
+    train_file = train_set[0][0]
+    audio_input = PreprocessAudio().preprocess_file(train_file)
+    print(np.reshape(audio_input, (1, -1, 26)).shape)
+    encoder_state = self.encoder_model.predict(np.reshape(audio_input, (1, -1, 26)))
 
-    # Generate empty target sequence of length 1.
+    # (1 sample, 1 timestep, NUM_CLASSES possibilties)
     target_seq = np.zeros((1, 1, config.NUM_CLASSES))
     # Populate the first character of target sequence with the start character.
-    target_seq[0, 0, config.TOKEN_TO_INDEX] = 1.0
+    # should TOKEN_TO_INDEX["<sos>"] = 0? --> would lead to issues with one-hot encoding
+    target_seq[0, 0, 0] = 1.0
 
     # Sampling loop for a batch of sequences
     # (to simplify, here we assume a batch of size 1).
     stop_condition = False
     decoded_sentence = ""
     while not stop_condition:
-        output_tokens, hidden_state, cell_state = self.decoder_model.predict([target_seq] + encoder_state)
+      #output_tokens, hidden_state, cell_state = self.decoder_model.predict([target_seq] + encoder_state)
+      # internal_state = [hidden_state, cell_state]
+      output_tokens, internal_state = self.decoder_model.predict([target_seq] + encoder_state)
 
-        # Sample a token
-        sampled_token_index = np.argmax(output_tokens[0, -1, :])
-        sampled_char = config.INDEX_TO_TOKEN[sampled_token_index]
-        decoded_sentence += sampled_char
+      # Sample a token
+      sampled_token_index = np.argmax(output_tokens[0, -1, :])
+      sampled_char = config.INDEX_TO_TOKEN[sampled_token_index]
+      decoded_sentence += sampled_char
 
-        # Exit condition: either hit max length
-        # or find stop character.
-        if sampled_char == "<eos>" or len(decoded_sentence) > config.MAX_DECODER_SEQ_LENGTH:
-            stop_condition = True
+      # Exit condition: either hit max length
+      # or find stop character.
+      if sampled_char == "<eos>" or len(decoded_sentence) > config.MAX_DECODER_SEQ_LENGTH:
+          stop_condition = True
 
-        # Update the target sequence (of length 1).
-        target_seq = np.zeros((1, 1, config.NUM_CLASSES))
-        target_seq[0, 0, sampled_token_index] = 1.0
+      # Update the target sequence (of length 1).
+      target_seq = np.zeros((1, 1, config.NUM_CLASSES))
+      # sampled_token_index does not start at zero does that matter?
+      target_seq[0, 0, sampled_token_index] = 1.0
 
-        # Update states
-        encoder_state = [hidden_state, cell_state]
+      # Update states
+      encoder_state = internal_state
 
