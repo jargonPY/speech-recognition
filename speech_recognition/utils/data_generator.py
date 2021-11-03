@@ -122,3 +122,19 @@ class DataGenerator(tf.keras.utils.Sequence):
 
     logger.info(f"Train set length: {len(train_set)}, Val set length: {len(val_set)}")
     return train_set, val_set
+
+  @staticmethod
+  def get_test_files():
+
+    audio_files = sorted(os.listdir(config.AUTIO_TRAIN_PATH))
+    text_files = sorted(os.listdir(config.TEXT_TRAIN_PATH))
+    assert len(audio_files) == len(text_files), f"Number of files must be equal: Audio {len(audio_files)}, Text {len(text_files)}"
+
+    file_names = []
+    for index in range(len(audio_files)):
+      audio_file = config.AUDIO_TEST_PATH + "/" + audio_files[index]
+      text_file = config.TEXT_TEST_PATH + "/" + text_files[index]
+      files = [audio_file, text_file]
+      file_names.append(files)
+    return file_names
+

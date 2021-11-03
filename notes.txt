@@ -38,3 +38,23 @@
   - can programmatically access the logs
 3. plotting functionality
 4. start training!!!
+
+*------- Issues ----------*
+One-hot encoding: zero padding then one-hot encoding makes an extra class and "uses" the zero index
+    1. one-hot encode before padding
+    2. avoid one-hot encoding by using an embedding layer
+
+Batch predictions: right not predictions happen on a sample by sample basis
+
+Specifying which audio file/data to predict on
+
+Ensuring that the loaded model is assigned to the correct layers of encoder/decoder model
+
+When doing validation during training although a different dataset is used, the true text characters are fed 
+into the decoder. Same issue if we use the Model.evaluate() != CustomModel.evaluate().
+
+
+
+
+
+specify what data to infer on

@@ -90,14 +90,9 @@ class BaseModel():
     )
 
     #log_dir = f"{self.version_path}/logs/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-    log_dir = f"{self.version_path}/logs"
+    #log_dir = f"{self.version_path}/logs"
     # to open tensorboard: tensorboard --logdir={working_dir/.../version_path/logs/}
     #tensorboard = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
-
-    # tb = program.TensorBoard()
-    # tb.configure(argv=[None, '--logdir', log_dir])
-    # url = tb.launch()
-    # print(f"Tensorflow listening on {url}")
 
     logsCallback = LogsCallback(self.model_name, self.version)
     
@@ -112,46 +107,38 @@ class BaseModel():
                         callbacks=[checkpoint, logsCallback])
     return history
 
- 
-  def inference(self):
-    # on entire data set using predict() method
-    pass
-
   def evaluate(self):
     pass
 
   def test(self):
-    pass
+    # combine predict and evaluate
+    test_set = utils.DataGenerator.get_test_files()
+    self.predict(test_set[0][0]) #temp for debugging
 
-  def predict(self):
-    train_set, val_set = utils.DataGenerator.get_file_names()
-    train_file = train_set[0][0]
-    audio_input = PreprocessAudio().preprocess_file(train_file)
-    print(np.reshape(audio_input, (1, -1, 26)).shape)
-    encoder_state = self.encoder_model.predict(np.reshape(audio_input, (1, -1, 26)))
+  def predict(self, audio_input):
 
-    # (1 sample, 1 timestep, NUM_CLASSES possibilties)
+    audio_input = PreprocessAudio().preprocess_file(audio_input)
+    audio_input = np.reshape(audio_input, (1, -1, audio_input.shape[1]))
+    encoder_state = self.encoder_model.predict(audio_input)
+
+    # (1 sample, 1 timestep, NUM_CLASSES possibilties) --> should include zero padding as a class
     target_seq = np.zeros((1, 1, config.NUM_CLASSES))
     # Populate the first character of target sequence with the start character.
-    # should TOKEN_TO_INDEX["<sos>"] = 0? --> would lead to issues with one-hot encoding
-    target_seq[0, 0, 0] = 1.0
+    target_seq[0, 0, 1] = 1.0
 
-    # Sampling loop for a batch of sequences
-    # (to simplify, here we assume a batch of size 1).
+    # Sampling loop for a batch of sequences (here we assume a batch size of 1)
     stop_condition = False
     decoded_sentence = ""
     while not stop_condition:
-      #output_tokens, hidden_state, cell_state = self.decoder_model.predict([target_seq] + encoder_state)
       # internal_state = [hidden_state, cell_state]
       output_tokens, internal_state = self.decoder_model.predict([target_seq] + encoder_state)
 
-      # Sample a token
+      # Sample a token (output_tokens.shape = (1,1,30))
       sampled_token_index = np.argmax(output_tokens[0, -1, :])
       sampled_char = config.INDEX_TO_TOKEN[sampled_token_index]
       decoded_sentence += sampled_char
 
-      # Exit condition: either hit max length
-      # or find stop character.
+      # Exit condition: either hit max length or find stop character
       if sampled_char == "<eos>" or len(decoded_sentence) > config.MAX_DECODER_SEQ_LENGTH:
           stop_condition = True
 
@@ -162,4 +149,5 @@ class BaseModel():
 
       # Update states
       encoder_state = internal_state
+    print("Decoded sentence: ", decoded_sentence)
 
