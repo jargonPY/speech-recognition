@@ -1,0 +1,166 @@
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 4158, Val set length: 462
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 3.3503708839416504, 'accuracy': 0.03965585306286812}
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 3.3230390548706055, 'accuracy': 0.2669106125831604}
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 4158, Val set length: 462
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 3.296058416366577, 'accuracy': 0.36342957615852356}
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 3.2675843238830566, 'accuracy': 0.40219542384147644}
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 4158, Val set length: 462
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 3.2365431785583496, 'accuracy': 0.421281635761261}
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 3.201305389404297, 'accuracy': 0.43245649337768555}
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 4158, Val set length: 462
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 4158, Val set length: 462
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 3.1598923206329346, 'accuracy': 0.43146756291389465}
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 3.1098008155822754, 'accuracy': 0.42850080132484436}
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 4158, Val set length: 462
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 3.0486316680908203, 'accuracy': 0.4209849536418915}
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 4158, Val set length: 462
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 4158, Val set length: 462
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 2.729280948638916, 'accuracy': 0.41386470198631287}
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 2.6721298694610596, 'accuracy': 0.415941447019577}
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 4158, Val set length: 462
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 2.6262457370758057, 'accuracy': 0.4174248278141022}
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 2.5876708030700684, 'accuracy': 0.4202927350997925}
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 479, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).preprocess_files(54) - Index: 0. Getting samples from: 0 to: 128
+[INFO] - (data_generator.py).__getitem__(102) - Shapes: ((128, 636, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 3696, Val set length: 924
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 3696, Val set length: 924
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 3696, Val set length: 924
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 3696, Val set length: 924
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 3696, Val set length: 924
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 3696, Val set length: 924
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 3696, Val set length: 924
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 3696, Val set length: 924
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 3696, Val set length: 924
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 3696, Val set length: 924
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 3696, Val set length: 924
+[INFO] - (data_generator.py).get_file_names(123) - Train set length: 3696, Val set length: 924

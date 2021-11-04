@@ -28,7 +28,7 @@ class BaseModel():
     """
 
     self.model_name = model_name
-    self.model_path = str(pathlib.Path(__file__).parent) + "/" + model_name
+    self.model_path = str(pathlib.Path(__file__).parents[2]) + "/models/" + model_name
     self.version = None
     self.version_path = None
 
