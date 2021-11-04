@@ -107,13 +107,13 @@ class BaseModel():
                         callbacks=[checkpoint, logsCallback])
     return history
 
-  def evaluate(self):
-    pass
-
   def test(self):
     # combine predict and evaluate
     test_set = utils.DataGenerator.get_test_files()
     self.predict(test_set[0][0]) #temp for debugging
+
+  def evaluate(self):
+    pass
 
   def predict(self, audio_input):
 

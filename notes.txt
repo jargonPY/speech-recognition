@@ -44,7 +44,7 @@ One-hot encoding: zero padding then one-hot encoding makes an extra class and "u
     1. one-hot encode before padding
     2. avoid one-hot encoding by using an embedding layer
 
-Batch predictions: right not predictions happen on a sample by sample basis
+Batch predictions: right now predictions happen on a sample by sample basis
 
 Specifying which audio file/data to predict on
 
