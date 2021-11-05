@@ -3,7 +3,6 @@ import pathlib
 import os
 import datetime
 import numpy as np
-from numpy.lib.recfunctions import _append_fields_dispatcher
 import tensorflow as tf
 from tensorboard import program
 sys.path.append(str(pathlib.Path(__file__).parents[1]))

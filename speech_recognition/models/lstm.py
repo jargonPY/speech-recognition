@@ -1,7 +1,7 @@
 import sys
 import pathlib
 import tensorflow as tf
-from tensorflow.keras.layers import Input, Embedding, LSTM, Dense, Bidirectional, Concatenate
+from tensorflow.keras.layers import Input, LSTM, Dense
 sys.path.append(str(pathlib.Path(__file__).parents[1]))
 sys.path.append(str(pathlib.Path(__file__).parents[2]))
 import config

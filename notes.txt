@@ -53,8 +53,6 @@ Ensuring that the loaded model is assigned to the correct layers of encoder/deco
 When doing validation during training although a different dataset is used, the true text characters are fed 
 into the decoder. Same issue if we use the Model.evaluate() != CustomModel.evaluate().
 
-
-
-
-
-specify what data to infer on
+We want to ignore any output past the EOS token, so these tokens should not 
+contribute to the loss (they must be masked out). For example, if the model 
+outputs “Je bois du lait <eos> oui,” the loss for the last word should be ignored.
