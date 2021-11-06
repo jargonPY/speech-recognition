@@ -1,5 +1,11 @@
 import tensorflow as tf
 
+"""
+  All higher level APIs inherit from tf.Module, this class has some basic utility methods (saving model etc.)
+  that are often necessary when interacting with other objects (losses, gradients etc.). Keras Layer inhertis 
+  from tf.Module and adds on more functionality (support for training=True, build method etc.).
+"""
+
 class RNN(tf.keras.layers.Layer):
 
   """
@@ -56,7 +62,17 @@ class RNN(tf.keras.layers.Layer):
     # tells Keras that the layer is built and sets self.built=True
     super().build(input_shape)
 
-  def call(self, x, training=None): # step, training=None allows to customize behaviour during training/testing
+  def call(self, x, training=None): 
+    """
+      makes the layer a "callable", can be called like a function while still being an object and maintaining 
+      internal state
+    """
+    # x --> (batch_size, timesteps, features)
+    for index in range(x.shape[1]):
+      self.step(x[:, index, :])
+
+  def step(self, x): # equivalent to RNNCell
+    # x --> (batch, features)
     linear = tf.matmul(self.h, self.w_h) + tf.matmul(x, self.w_x) + self.b_h
     self.h = tf.math.tanh(linear)
     y = self.activation(tf.matmul(self.h, self.w_y) + self.b_y)
@@ -72,13 +88,23 @@ class CustomModel(tf.keras.Model):
     that computes on tensors (a forward pass). It also includes other utility methods that are necessary in
     the model development cycle. 
 
-    Define a Model object (class) by passing in inputs and outputs (using functional API):
-      1. Model object exposes several predefined methods (i.e. fit, evaluate, etc.)
-      2. Many of the methods can be overriden to get custom behaviours while maintaing the other predefined methods
-      3. Model() --> Model.compile(intialize metric and optimizer and loss objects) --> Model.fit(start training loop)
-      4. If init, call are not overriden the CustomModel can be used in functional API
+    Define a Model object (class) by passing in inputs and outputs (using functional API), this allows the class
+    to build an internal representation of the model (what to compute during the forward pass).
 
-      Metrics and Optimizers and objects (classes), Losses are functions
+    1. Model object exposes several predefined methods (i.e. fit, evaluate, etc.)
+    2. Many of the methods can be overriden to get custom behaviours while maintaing the other predefined methods
+    3. Model() --> Model.compile(intialize metric and optimizer and loss objects) --> Model.fit(start training loop)
+    4. If init, call are not overriden the CustomModel can be used in functional API
+
+    Metrics are 'callable' objects. The metric is updated by calling the new value with the callable and 
+    the result (usually an average of the batch) can be retrieved from utility functions. There is also a clear
+    method.
+    
+    The role of the Optimizers is to update the model's weights based on the loss function. These are classes
+    that are used to change weights and learning rate. All optimizations require gradients (thus its computed by
+    the Model object), but how to apply these gradients may vary (thus its left to the Optimizer object).
+    
+    Losses are functions.
   """
 
   loss_tracker = tf.keras.metrics.Mean(name="loss")
