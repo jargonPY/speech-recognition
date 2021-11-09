@@ -3,6 +3,7 @@ import sys
 import pathlib
 import os
 import numpy as np
+import tensorflow as tf
 sys.path.append(str(pathlib.Path(__file__).parents[2]))
 import speech_recognition.config as config
 

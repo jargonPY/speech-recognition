@@ -44,6 +44,17 @@ One-hot encoding: zero padding then one-hot encoding makes an extra class and "u
     1. one-hot encode before padding
     2. avoid one-hot encoding by using an embedding layer
 
+    Solution:
+    When preprocessing text create a custom one-hot encoder that converts from char to one-hot vector
+    using the dict. This way we can skip <pad> and rather insert a vector of zeros, which can be
+    masked. <pad> should not map to zero or any number. Masking ensures that supporting layers
+    ignore padded values.
+
+    *** 
+    Instead of padding first than one-hot encoding this can be done in a single step, encode
+    and append zero-vectors at the end based on the batch. This process can be done in parallel.
+    ***
+
 Batch predictions: right now predictions happen on a sample by sample basis
 
 Specifying which audio file/data to predict on

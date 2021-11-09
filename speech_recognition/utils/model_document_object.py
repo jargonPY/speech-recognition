@@ -23,6 +23,8 @@ import config
 
 class ModelDocumentObject():
 
+  # CHANGE PATH
+  # str(pathlib.Path(__file__).parents[2]) + "/models/" + model_name
   FILE_PATH = str(pathlib.Path(__file__).parent) + "/" + "model_document_object.json"
 
   def __init__(self):

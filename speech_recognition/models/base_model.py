@@ -88,11 +88,6 @@ class BaseModel():
       save_freq="epoch"
     )
 
-    #log_dir = f"{self.version_path}/logs/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-    #log_dir = f"{self.version_path}/logs"
-    # to open tensorboard: tensorboard --logdir={working_dir/.../version_path/logs/}
-    #tensorboard = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
-
     logsCallback = LogsCallback(self.model_name, self.version)
     
     self.model.compile(optimizer="rmsprop", loss="categorical_crossentropy", metrics=["accuracy"])
