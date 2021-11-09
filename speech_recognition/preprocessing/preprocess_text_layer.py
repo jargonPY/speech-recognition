@@ -6,11 +6,20 @@ import tensorflow as tf
 sys.path.append(str(pathlib.Path(__file__).parents[2]))
 import speech_recognition.config as config
 
-class PreprocessText(tf.keras.layers.Layer):
+class PreprocessTextLayer(tf.keras.layers.Layer):
   """
-    improvements:
+    Goal:
+      Takes raw text files and produces preprocessed data ready to be trained on.
+      By creating a preprocessing layer we can make our model truly "end-to-end"
+      model, passing in raw data and producing predictions.
+
+    Improvements:
       - clean_text, pad, one-hot encode need to be done sequentially
         but they can each (the for loop) be performed in parallel
+
+      - @tf.function
+          - https://www.tensorflow.org/guide/function
+          - dont rely on Python side effects like object mutation or list appends
   """
 
   def __init__(self, one_hot_encode=True, **kwargs):
