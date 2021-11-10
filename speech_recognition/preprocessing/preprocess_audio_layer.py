@@ -1,4 +1,3 @@
-import string
 import sys
 import pathlib
 import numpy as np
@@ -13,7 +12,11 @@ class PreprocessAudioLayer(tf.keras.layers.Layer):
     self.sample_rate = sample_rate
     self.frame_size = frame_size
     self.frame_stride = frame_stride
-
+    # number of samples per window
+    self.window_size = int(self.sample_rate * self.frame_size)
+    # number of samples to skip per stride
+    self.shift_size = int(self.sample_rate * self.frame_stride)
+    
   @staticmethod
   def hz_to_mel(hz):
 
@@ -24,26 +27,26 @@ class PreprocessAudioLayer(tf.keras.layers.Layer):
 
     return 700 * (np.exp(mel / 1125) - 1)
 
-  def boost(self, alpha=0.95):
+  def boost(self, sample, alpha=0.95):
     """
     Applying a first order high-pass filter to boost the higher frequencies
     """
 
-    data = np.empty_like(self.data)
-    data[0] = self.data[0]
-    data[1:] = self.data[1:] - alpha * self.data[:-1]
+    data = np.empty_like(sample)
+    data[0] = sample[0]
+    data[1:] = sample[1:] - alpha * sample[:-1]
     return data
 
-  def rolling_window(self):
+  def rolling_window(self, sample):
     
-    shape = self.data.shape[:-1] + (int(self.data.shape[-1] - self.window_size + 1), int(self.window_size))
-    strides = self.data.strides + (self.data.strides[-1],)
-    return np.lib.stride_tricks.as_strided(self.data, shape=shape, strides=strides)[::self.shift_size]
+    shape = sample.shape[:-1] + (int(sample.shape[-1] - self.window_size + 1), int(self.window_size))
+    strides = sample.strides + (sample.strides[-1],)
+    return np.lib.stride_tricks.as_strided(sample, shape=shape, strides=strides)[::self.shift_size]
 
-  def smoothing_filter(self, filter=np.hamming):
+  def smoothing_filter(self, sample, filter=np.hamming):
 
     w = filter(self.window_size)
-    return self.data * w
+    return sample * w
 
   def compute_nfft(self):
 
@@ -52,12 +55,12 @@ class PreprocessAudioLayer(tf.keras.layers.Layer):
         nfft *= 2
     return nfft
 
-  def spectrum(self, nfft):
+  def spectrum(self, sample, nfft):
     """
     returns: given an NxM input matrix, output will be Nx(NFFT/2+1). Each row will be the magnitude spectrum of the corresponding frame.
     """
 
-    fft = np.fft.rfft(self.data, n=nfft, axis=1)
+    fft = np.fft.rfft(sample, n=nfft, axis=1)
     spectrum = fft * fft / self.window_size
     return spectrum
 
@@ -66,11 +69,11 @@ class PreprocessAudioLayer(tf.keras.layers.Layer):
     Multiply each filter bank with the power spectrum and add up the coefficents.
     This will give us the amount of 'energy' is each filter bank 
     """
-    low_mel = PreprocessAudio.hz_to_mel(lower_freq)
-    high_mel = PreprocessAudio.hz_to_mel(upper_freq)
+    low_mel = self.hz_to_mel(lower_freq)
+    high_mel = self.hz_to_mel(upper_freq)
     # get equally spaced points in mel scale
     mel_points = np.linspace(low_mel, high_mel, num_filt + 2)
-    hz_points = PreprocessAudio.mel_to_hz(mel_points)
+    hz_points = self.mel_to_hz(mel_points)
     # round hz_points to the nearest fft bin
     bins = np.floor((nfft + 1) * hz_points / self.sample_rate)
 
@@ -138,12 +141,14 @@ class PreprocessAudioLayer(tf.keras.layers.Layer):
         delta_feat[t] = np.dot(np.arange(-N, N+1), padded[t : t+2*N+1]) / denominator   # [t : t+2*N+1] == [(N+t)-N : (N+t)+N+1]
     return delta_feat
 
-  def call(self, audio_files):
+  def call(self, audio_samples):
 
-    for audio_file in audio_files:
-      self.number_of_samples = len(audio_file)
-      # number of samples per window
-      self.window_size = int(self.sample_rate * self.frame_size)
-      # number of samples to skip per stride
-      self.shift_size = int(self.sample_rate * self.frame_stride)
-    return self.get_filter_banks() # add more preprocessing options
+    for sample in audio_samples:
+      self.number_of_sample = len(sample)
+      sample = self.boost(sample)
+      sample = self.rolling_window(sample)
+      sample = self.smoothing_filter(sample)
+
+      nfft = self.compute_nfft()
+      sample = self.spectrum(sample, nfft)
+      sample = self.mel_binning(sample, nfft)
