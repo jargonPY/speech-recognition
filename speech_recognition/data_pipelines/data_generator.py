@@ -7,7 +7,7 @@ import random
 sys.path.append(str(pathlib.Path(__file__).parents[2]))
 import speech_recognition.config as config
 from speech_recognition.preprocessing import PreprocessAudio, PreprocessText, preprocess_text
-from utils.generate_logger import generate_logger
+from speech_recognition.utils.generate_logger import generate_logger
 
 """
 Sequence are a safer way to do multiprocessing. This structure guarantees that the network will only train 
@@ -17,6 +17,7 @@ https://medium.com/analytics-vidhya/write-your-own-custom-data-generator-for-ten
 """
 
 logger = generate_logger(__name__, "main.log")
+
 class DataGenerator(tf.keras.utils.Sequence):
 
   def __init__(self, samples, batch_size, one_hot=True):
