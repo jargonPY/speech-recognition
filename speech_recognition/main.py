@@ -1,6 +1,6 @@
 import argparse
 from models.lstm import VanillaLSTM
-from models.model_document_object import ModelDocumentObject
+from utils.model_document_object import ModelDocumentObject
 import config
 
 parser = argparse.ArgumentParser()
@@ -20,7 +20,7 @@ if __name__ == "__main__":
     
     if args.mode == "train":
       model = models[args.model](load_version=args.load)
-      model.fit()
+      model.train()
       pass
 
     if args.mode == "test":

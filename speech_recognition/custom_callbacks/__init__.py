@@ -1,0 +1,1 @@
+from speech_recognition.custom_callbacks.logs_callback import LogsCallback
