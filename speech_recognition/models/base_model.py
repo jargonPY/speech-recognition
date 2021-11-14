@@ -1,8 +1,3 @@
-from speech_recognition.preprocessing import PreprocessAudio
-from speech_recognition.custom_callbacks import LogsCallback
-import data_pipelines
-import utils
-import config
 import sys
 import pathlib
 import os
@@ -10,6 +5,12 @@ import numpy as np
 import tensorflow as tf
 sys.path.append(str(pathlib.Path(__file__).parents[1]))
 sys.path.append(str(pathlib.Path(__file__).parents[2]))
+import config
+import utils
+import data_pipelines
+from speech_recognition.custom_callbacks import LogsCallback
+from speech_recognition.preprocessing import PreprocessAudio
+
 
 logger = utils.generate_logger(__name__, "main.log")
 
@@ -34,7 +35,7 @@ class BaseModel():
         self.version_path = None
 
         if load_version:
-            if load_version == "latest":
+            if load_version == "latest" and config.document.check_model_exists(model_name):
                 self.version = config.document.get_latest_version(model_name)
 
             elif config.document.check_version_exists(model_name, load_version):
@@ -55,6 +56,7 @@ class BaseModel():
                 self.version = config.document.update_version(model_name)
 
             self.version_path = self.model_path + f"/version_{self.version}"
+            # throws and error every other version
             os.mkdir(self.version_path)
 
             logger.info(
@@ -79,7 +81,7 @@ class BaseModel():
             train, val = data_pipelines.data_pipeline(split, batch_size)
 
         checkpoint = tf.keras.callbacks.ModelCheckpoint(
-            file_path=self.version_path,
+            filepath=self.version_path,
             save_freq="epoch"
         )
 
@@ -105,7 +107,7 @@ class BaseModel():
     def evaluate(self):
         pass
 
-    def predict(self, audio_input):
+    def inference(self, audio_input):
         """
           For inference the encoder model and the decoder model should make
           the preprocessing layers part of the model
@@ -115,10 +117,10 @@ class BaseModel():
         audio_input = np.reshape(audio_input, (1, -1, audio_input.shape[1]))
         encoder_state = self.encoder_model.predict(audio_input)
 
-        # (1 sample, 1 timestep, NUM_CLASSES possibilties) --> should include zero padding as a class
+        # (1 sample, 1 timestep, NUM_CLASSES)
         target_seq = np.zeros((1, 1, config.NUM_CLASSES))
         # Populate the first character of target sequence with the start character.
-        target_seq[0, 0, 1] = 1.0
+        target_seq[0, 0, config.TOKEN_TO_INDEX["<sos>"]] = 1.0
 
         # Sampling loop for a batch of sequences (here we assume a batch size of 1)
         stop_condition = False

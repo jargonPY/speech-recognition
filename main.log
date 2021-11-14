@@ -1,0 +1,10 @@
+[ERROR] - (base_model.py).__init__(45) - Version specified does not exist
+[INFO] - (base_model.py).__init__(61) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 1-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_1
+[INFO] - (data_generator_v2.py).fetch_names(99) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(99) - validation set length: 4620
+[INFO] - (base_model.py).__init__(61) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 2-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_2
+[INFO] - (data_generator_v2.py).fetch_names(99) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(99) - validation set length: 4620
+[INFO] - (base_model.py).__init__(61) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 3-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_3
+[INFO] - (data_generator_v2.py).fetch_names(102) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(102) - validation set length: 4620

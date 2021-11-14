@@ -55,6 +55,13 @@ class ModelDocumentObject():
         "test": {}
       }
 
+  def check_model_exists(self, model_name):
+    try:
+      self.document[model_name]
+      return True
+    except:
+      return False
+
   def check_version_exists(self, model_name, version):
     try:
       self.document[model_name][version]

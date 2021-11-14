@@ -63,14 +63,17 @@ class DataGeneratorV2(tf.keras.utils.Sequence):
         """
           shuffle the dataset at the end of each epoch
         """
-        random.shuffle(self.samples)
+        random.seed(42)
+        random.shuffle(self.audio_files)
+        random.seed(42)
+        random.shuffle(self.text_files)
 
     def __len__(self):
         """
           returns the number of batches in the sequence 
             - return value must be of type int
         """
-        return len(self.samples) // self.batch_size
+        return len(self.audio_files) // self.batch_size
 
     def __getitem__(self, index):
         """
