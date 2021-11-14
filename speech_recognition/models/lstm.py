@@ -1,12 +1,11 @@
-from models.base_model import BaseModel
-import config
 import sys
 import pathlib
 import tensorflow as tf
 from tensorflow.keras.layers import Input, LSTM, Dense
 sys.path.append(str(pathlib.Path(__file__).parents[1]))
 sys.path.append(str(pathlib.Path(__file__).parents[2]))
-
+import config
+from models.base_model import BaseModel
 
 class VanillaLSTM(BaseModel):
 
@@ -17,14 +16,14 @@ class VanillaLSTM(BaseModel):
         super().__init__(VanillaLSTM.MODEL_NAME, load_version)
 
         # training encoder
-        encoder_inputs = Input(shape=(None, audio_dim), name="audio-input")
-        encoder = LSTM(hidden_dim, return_state=True, name="audio-encoder")
+        encoder_inputs = Input(shape=(None, audio_dim), name="audio_input")
+        encoder = LSTM(hidden_dim, return_state=True, name="audio_encoder")
         encoder_outputs, state_h, state_c = encoder(encoder_inputs)
         encoder_states = [state_h, state_c]
 
         # training decoder
         decoder_inputs = Input(
-            shape=(None, config.NUM_CLASSES), name="text-input")
+            shape=(None, config.NUM_CLASSES), name="text_input")
         decoder_lstm = LSTM(hidden_dim, return_sequences=True,
                             return_state=True, name="decoder")
         decoder_outputs, state_h, state_c = decoder_lstm(
@@ -52,4 +51,4 @@ class VanillaLSTM(BaseModel):
                                             decoder_outputs, decoder_states])
 
         if load_version:
-            self.load_weights()
+            self.load_model()

@@ -8,3 +8,537 @@
 [INFO] - (base_model.py).__init__(61) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 3-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_3
 [INFO] - (data_generator_v2.py).fetch_names(102) - train set length: 4620
 [INFO] - (data_generator_v2.py).fetch_names(102) - validation set length: 4620
+[INFO] - (base_model.py).__init__(62) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 4-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_4
+[INFO] - (data_generator_v2.py).fetch_names(102) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(102) - validation set length: 4620
+[INFO] - (base_model.py).__init__(62) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 5-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_5
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(62) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 0-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_0
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(62) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 0-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_0
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(63) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 0-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_0
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(63) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 0-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_0
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(63) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 1-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_1
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(63) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 2-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_2
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(63) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 3-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_3
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 3-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_3
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 3-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_3
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 3-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_3
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 3-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_3
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 4-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_4
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 4-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_4
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 5-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_5
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 5-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_5
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 5-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_5
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 5-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_5
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128,), (128, 78, 30), (128, 78, 30))
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 6-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_6
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 6-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_6
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 200, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 218, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 2.1336581707000732, 'accuracy': 0.016910601407289505}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 221, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 212, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 6-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_6
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 200, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 200, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 2.1063919067382812, 'accuracy': 0.03639240562915802}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 188, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 211, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 6-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_6
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 200, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 247, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 2.005981922149658, 'accuracy': 0.014103084802627563}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 242, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 249, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 0-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_0
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 200, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 242, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 2.1259572505950928, 'accuracy': 0.03362341597676277}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 212, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 262, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 6-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_6
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 200, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 237, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 2.0662877559661865, 'accuracy': 0.06220332160592079}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 199, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 208, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 6-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_6
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 200, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 195, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 2.0440263748168945, 'accuracy': 0.012620192021131516}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 217, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 218, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 238, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 1, logs: {'loss': 2.011840581893921, 'accuracy': 0.01811305806040764}
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 2, logs: {'loss': 2.0422141551971436, 'accuracy': 0.02118644118309021}
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 3, logs: {'loss': 2.0749013423919678, 'accuracy': 0.02599206380546093}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 198, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 4, logs: {'loss': 2.0743536949157715, 'accuracy': 0.030892174690961838}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 242, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 5, logs: {'loss': 2.0727789402008057, 'accuracy': 0.037043169140815735}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 237, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 6, logs: {'loss': 2.065699815750122, 'accuracy': 0.042096756398677826}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 202, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 7, logs: {'loss': 2.077322006225586, 'accuracy': 0.046179451048374176}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 247, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 8, logs: {'loss': 2.0570716857910156, 'accuracy': 0.04818077012896538}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 200, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 9, logs: {'loss': 2.051302671432495, 'accuracy': 0.049840763211250305}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 208, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 10, logs: {'loss': 2.038318634033203, 'accuracy': 0.05144133418798447}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 191, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 11, logs: {'loss': 2.0254390239715576, 'accuracy': 0.05373576655983925}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 222, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 12, logs: {'loss': 2.014800548553467, 'accuracy': 0.06169813126325607}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 230, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 13, logs: {'loss': 2.008463144302368, 'accuracy': 0.09215633571147919}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 188, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 14, logs: {'loss': 2.0053117275238037, 'accuracy': 0.11731968820095062}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 186, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 15, logs: {'loss': 1.9957830905914307, 'accuracy': 0.1406870037317276}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 194, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 16, logs: {'loss': 1.985926866531372, 'accuracy': 0.16187453269958496}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 187, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 17, logs: {'loss': 1.9731099605560303, 'accuracy': 0.1821485161781311}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 184, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 18, logs: {'loss': 1.9695992469787598, 'accuracy': 0.19756178557872772}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 221, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 19, logs: {'loss': 1.9645719528198242, 'accuracy': 0.21189484000205994}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 214, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 20, logs: {'loss': 1.9615349769592285, 'accuracy': 0.2247026115655899}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 281, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 21, logs: {'loss': 1.9566936492919922, 'accuracy': 0.23647576570510864}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 200, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 22, logs: {'loss': 1.9515719413757324, 'accuracy': 0.24753674864768982}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 220, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 23, logs: {'loss': 1.946629524230957, 'accuracy': 0.25760984420776367}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 211, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 24, logs: {'loss': 1.9429441690444946, 'accuracy': 0.2668907046318054}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 239, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 25, logs: {'loss': 1.9406321048736572, 'accuracy': 0.2750740051269531}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 199, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 26, logs: {'loss': 1.938488483428955, 'accuracy': 0.2825869917869568}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 187, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 27, logs: {'loss': 1.9350706338882446, 'accuracy': 0.28974661231040955}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 249, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 28, logs: {'loss': 1.9297808408737183, 'accuracy': 0.29725468158721924}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 212, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 29, logs: {'loss': 1.927422046661377, 'accuracy': 0.3035275340080261}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 262, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 30, logs: {'loss': 1.9214856624603271, 'accuracy': 0.3103957772254944}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 197, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 31, logs: {'loss': 1.919927716255188, 'accuracy': 0.31557849049568176}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 215, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 204, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 215, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 179, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 198, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 228, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 186, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 1.859967827796936, 'accuracy': 0.48190268874168396}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 199, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 1, logs: {'loss': 1.8365188837051392, 'accuracy': 0.4888251721858978}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 222, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 2, logs: {'loss': 1.8367843627929688, 'accuracy': 0.4885944128036499}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 249, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 3, logs: {'loss': 1.8238022327423096, 'accuracy': 0.4919402599334717}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 184, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 4, logs: {'loss': 1.8217389583587646, 'accuracy': 0.4923262894153595}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 238, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 5, logs: {'loss': 1.824018120765686, 'accuracy': 0.4914112091064453}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 188, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 6, logs: {'loss': 1.8306349515914917, 'accuracy': 0.48936593532562256}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 184, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 7, logs: {'loss': 1.839319109916687, 'accuracy': 0.4869708716869354}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 188, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 8, logs: {'loss': 1.8390358686447144, 'accuracy': 0.48706743121147156}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 242, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 9, logs: {'loss': 1.8401635885238647, 'accuracy': 0.4864966571331024}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 197, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 10, logs: {'loss': 1.8404231071472168, 'accuracy': 0.4863891005516052}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 202, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 11, logs: {'loss': 1.8411375284194946, 'accuracy': 0.48620399832725525}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 206, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 12, logs: {'loss': 1.8381091356277466, 'accuracy': 0.48692572116851807}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 214, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 13, logs: {'loss': 1.8343790769577026, 'accuracy': 0.48799440264701843}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 211, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 14, logs: {'loss': 1.832319974899292, 'accuracy': 0.48832425475120544}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 192, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 15, logs: {'loss': 1.8322465419769287, 'accuracy': 0.48834946751594543}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 239, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 16, logs: {'loss': 1.8291943073272705, 'accuracy': 0.4891921281814575}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 206, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 17, logs: {'loss': 1.8273612260818481, 'accuracy': 0.4896182417869568}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 247, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 18, logs: {'loss': 1.826979398727417, 'accuracy': 0.4896599352359772}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 217, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 19, logs: {'loss': 1.8281965255737305, 'accuracy': 0.4892280697822571}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 209, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 20, logs: {'loss': 1.8273987770080566, 'accuracy': 0.4894590377807617}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 194, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 21, logs: {'loss': 1.8277744054794312, 'accuracy': 0.489299476146698}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 281, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 22, logs: {'loss': 1.8273460865020752, 'accuracy': 0.48945680260658264}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 210, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 23, logs: {'loss': 1.82806396484375, 'accuracy': 0.4892583191394806}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 198, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 24, logs: {'loss': 1.828283667564392, 'accuracy': 0.48912355303764343}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 204, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 25, logs: {'loss': 1.830064058303833, 'accuracy': 0.4885670840740204}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 186, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 26, logs: {'loss': 1.8282074928283691, 'accuracy': 0.489000141620636}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 225, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 27, logs: {'loss': 1.8288811445236206, 'accuracy': 0.48872509598731995}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 215, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 28, logs: {'loss': 1.8298156261444092, 'accuracy': 0.48833587765693665}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 204, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 29, logs: {'loss': 1.829253911972046, 'accuracy': 0.4883769154548645}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 180, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 30, logs: {'loss': 1.8269885778427124, 'accuracy': 0.48891499638557434}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 219, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 31, logs: {'loss': 1.8272329568862915, 'accuracy': 0.48885032534599304}
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm, version: 0-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm/version_0
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 200, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 188, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 2.1738035678863525, 'accuracy': 0.0257120244204998}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 211, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 1, logs: {'loss': 2.1269454956054688, 'accuracy': 0.07846894860267639}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 214, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 2, logs: {'loss': 2.120133399963379, 'accuracy': 0.15507322549819946}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 238, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 3, logs: {'loss': 2.1322734355926514, 'accuracy': 0.20170007646083832}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 187, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 4, logs: {'loss': 2.085599422454834, 'accuracy': 0.2529836595058441}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 242, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 5, logs: {'loss': 2.0804288387298584, 'accuracy': 0.2850170433521271}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 186, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 6, logs: {'loss': 2.0657126903533936, 'accuracy': 0.3132038414478302}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 247, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 7, logs: {'loss': 2.044706106185913, 'accuracy': 0.33669155836105347}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 197, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 8, logs: {'loss': 2.0404019355773926, 'accuracy': 0.35228976607322693}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 200, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 9, logs: {'loss': 2.034881830215454, 'accuracy': 0.36487746238708496}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 194, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 10, logs: {'loss': 2.0208425521850586, 'accuracy': 0.37700945138931274}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 202, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 11, logs: {'loss': 2.0236687660217285, 'accuracy': 0.38272982835769653}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 249, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 12, logs: {'loss': 2.0079894065856934, 'accuracy': 0.3921798765659332}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 191, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 13, logs: {'loss': 1.9961310625076294, 'accuracy': 0.39979496598243713}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 222, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 14, logs: {'loss': 1.986512303352356, 'accuracy': 0.4060322642326355}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 237, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 15, logs: {'loss': 1.9796644449234009, 'accuracy': 0.41076552867889404}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 217, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 16, logs: {'loss': 1.9677016735076904, 'accuracy': 0.4165133535861969}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 262, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 17, logs: {'loss': 1.9558454751968384, 'accuracy': 0.42202892899513245}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 200, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 18, logs: {'loss': 1.9496020078659058, 'accuracy': 0.42571088671684265}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 221, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 19, logs: {'loss': 1.9448063373565674, 'accuracy': 0.4286966919898987}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 212, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 20, logs: {'loss': 1.9405782222747803, 'accuracy': 0.4312764108181}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 187, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 21, logs: {'loss': 1.9359675645828247, 'accuracy': 0.43378299474716187}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 230, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 22, logs: {'loss': 1.9331134557724, 'accuracy': 0.4358418881893158}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 208, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 23, logs: {'loss': 1.927993893623352, 'accuracy': 0.4382098615169525}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 239, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 24, logs: {'loss': 1.9257614612579346, 'accuracy': 0.4398294985294342}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 195, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 25, logs: {'loss': 1.920825481414795, 'accuracy': 0.44198933243751526}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 184, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 26, logs: {'loss': 1.9189889430999756, 'accuracy': 0.44330430030822754}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 218, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 27, logs: {'loss': 1.9172831773757935, 'accuracy': 0.44446292519569397}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 281, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 28, logs: {'loss': 1.9142630100250244, 'accuracy': 0.44588348269462585}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 199, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 29, logs: {'loss': 1.9125866889953613, 'accuracy': 0.4469285309314728}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 220, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 30, logs: {'loss': 1.9092367887496948, 'accuracy': 0.44833895564079285}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 198, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 31, logs: {'loss': 1.9073623418807983, 'accuracy': 0.4493396580219269}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 215, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 211, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 215, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 242, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 198, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 228, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 186, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 1.842003345489502, 'accuracy': 0.4817048907279968}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 199, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 1, logs: {'loss': 1.8199741840362549, 'accuracy': 0.4885284900665283}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 222, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 2, logs: {'loss': 1.820210576057434, 'accuracy': 0.4882977306842804}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 249, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 3, logs: {'loss': 1.807734727859497, 'accuracy': 0.491594135761261}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 184, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 4, logs: {'loss': 1.8063642978668213, 'accuracy': 0.49198922514915466}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 238, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 5, logs: {'loss': 1.8089146614074707, 'accuracy': 0.49111390113830566}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 188, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 6, logs: {'loss': 1.8149842023849487, 'accuracy': 0.4890965223312378}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 184, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 7, logs: {'loss': 1.823878288269043, 'accuracy': 0.48668521642684937}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 188, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 8, logs: {'loss': 1.8233064413070679, 'accuracy': 0.4867474436759949}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 242, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 9, logs: {'loss': 1.8248045444488525, 'accuracy': 0.4861496686935425}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 197, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 10, logs: {'loss': 1.8252145051956177, 'accuracy': 0.48600974678993225}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 202, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 11, logs: {'loss': 1.8264633417129517, 'accuracy': 0.4857487976551056}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 206, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 12, logs: {'loss': 1.823704481124878, 'accuracy': 0.4864445924758911}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 214, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 13, logs: {'loss': 1.820036768913269, 'accuracy': 0.48749858140945435}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 211, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 14, logs: {'loss': 1.8181335926055908, 'accuracy': 0.4878082573413849}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 192, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 15, logs: {'loss': 1.8179266452789307, 'accuracy': 0.4877852201461792}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 239, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 16, logs: {'loss': 1.8150272369384766, 'accuracy': 0.48858487606048584}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 206, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 17, logs: {'loss': 1.813342809677124, 'accuracy': 0.48898419737815857}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 247, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 18, logs: {'loss': 1.8134229183197021, 'accuracy': 0.489022821187973}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 217, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 19, logs: {'loss': 1.8147491216659546, 'accuracy': 0.48859354853630066}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 209, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 20, logs: {'loss': 1.8140629529953003, 'accuracy': 0.4887792766094208}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 194, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 21, logs: {'loss': 1.814897060394287, 'accuracy': 0.4886101484298706}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 281, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 22, logs: {'loss': 1.814522624015808, 'accuracy': 0.4887363612651825}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 210, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 23, logs: {'loss': 1.8155708312988281, 'accuracy': 0.488539457321167}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 198, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 24, logs: {'loss': 1.816086769104004, 'accuracy': 0.48841404914855957}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 204, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 25, logs: {'loss': 1.8181357383728027, 'accuracy': 0.48784297704696655}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 186, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 26, logs: {'loss': 1.8164687156677246, 'accuracy': 0.4882775843143463}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 225, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 27, logs: {'loss': 1.8174660205841064, 'accuracy': 0.4879930019378662}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 215, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 28, logs: {'loss': 1.8186112642288208, 'accuracy': 0.48760175704956055}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 204, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 29, logs: {'loss': 1.8180699348449707, 'accuracy': 0.4876247048377991}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 180, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 30, logs: {'loss': 1.8160377740859985, 'accuracy': 0.4881328046321869}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 219, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 31, logs: {'loss': 1.816412091255188, 'accuracy': 0.4880678355693817}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 193, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 228, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 194, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 215, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 198, 26), (128, 79, 30), (128, 79, 30))
+[ERROR] - (base_model.py).__init__(45) - Version specified does not exist
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm_v2-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm_v2, version: 0-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm_v2/version_0
+[INFO] - (data_generator_v2.py).fetch_names(103) - train set length: 4620
+[INFO] - (data_generator_v2.py).fetch_names(103) - validation set length: 4620
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 200, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 186, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 2.0424728393554688, 'accuracy': 0.018329326063394547}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 198, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 1, logs: {'loss': 2.063514471054077, 'accuracy': 0.15574920177459717}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 242, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 2, logs: {'loss': 2.067272901535034, 'accuracy': 0.2292553186416626}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 197, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 3, logs: {'loss': 2.066701650619507, 'accuracy': 0.2740384638309479}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 239, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 4, logs: {'loss': 2.0645692348480225, 'accuracy': 0.3089633882045746}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 214, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 5, logs: {'loss': 2.061948537826538, 'accuracy': 0.33547306060791016}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 184, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 6, logs: {'loss': 2.0576882362365723, 'accuracy': 0.3555612564086914}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 188, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 7, logs: {'loss': 2.0577468872070312, 'accuracy': 0.36956360936164856}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 221, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 8, logs: {'loss': 2.0478219985961914, 'accuracy': 0.38243627548217773}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 218, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 9, logs: {'loss': 2.0425069332122803, 'accuracy': 0.3918192684650421}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 230, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 10, logs: {'loss': 2.0361084938049316, 'accuracy': 0.4000180661678314}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 222, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 11, logs: {'loss': 2.0248329639434814, 'accuracy': 0.4078224301338196}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 202, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 12, logs: {'loss': 2.027761697769165, 'accuracy': 0.4107677936553955}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 217, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 13, logs: {'loss': 2.013033628463745, 'accuracy': 0.41775941848754883}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 208, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 14, logs: {'loss': 2.003526210784912, 'accuracy': 0.42276880145072937}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 195, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 15, logs: {'loss': 1.9941818714141846, 'accuracy': 0.42734622955322266}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 281, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 16, logs: {'loss': 1.9877568483352661, 'accuracy': 0.43077516555786133}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 247, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 17, logs: {'loss': 1.9772368669509888, 'accuracy': 0.43494558334350586}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 220, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 18, logs: {'loss': 1.9711112976074219, 'accuracy': 0.43788251280784607}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 194, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 19, logs: {'loss': 1.96389901638031, 'accuracy': 0.44091859459877014}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 238, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 20, logs: {'loss': 1.9647934436798096, 'accuracy': 0.44166919589042664}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 212, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 21, logs: {'loss': 1.9608910083770752, 'accuracy': 0.4435367286205292}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 187, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 22, logs: {'loss': 1.9564365148544312, 'accuracy': 0.44542065262794495}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 211, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 23, logs: {'loss': 1.9525260925292969, 'accuracy': 0.4471144378185272}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 200, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 24, logs: {'loss': 1.9499622583389282, 'accuracy': 0.44835400581359863}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 249, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 25, logs: {'loss': 1.9439324140548706, 'accuracy': 0.45052337646484375}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 187, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 26, logs: {'loss': 1.9362483024597168, 'accuracy': 0.4531654417514801}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 191, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 27, logs: {'loss': 1.9321333169937134, 'accuracy': 0.45476898550987244}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 200, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 28, logs: {'loss': 1.9286575317382812, 'accuracy': 0.45606452226638794}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 237, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 29, logs: {'loss': 1.9265100955963135, 'accuracy': 0.45692211389541626}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 262, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 30, logs: {'loss': 1.9206448793411255, 'accuracy': 0.4588187336921692}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 199, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 31, logs: {'loss': 1.9196137189865112, 'accuracy': 0.4593904912471771}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 215, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 242, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 230, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 215, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 198, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 228, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 186, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 0, logs: {'loss': 1.8604967594146729, 'accuracy': 0.48160600662231445}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 199, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 1, logs: {'loss': 1.8367509841918945, 'accuracy': 0.48842957615852356}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 222, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 2, logs: {'loss': 1.8382781744003296, 'accuracy': 0.4882318079471588}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 249, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 3, logs: {'loss': 1.8248735666275024, 'accuracy': 0.4915446937084198}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 184, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 4, logs: {'loss': 1.823398232460022, 'accuracy': 0.49194955825805664}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 238, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 5, logs: {'loss': 1.8264368772506714, 'accuracy': 0.4910808801651001}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 188, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 6, logs: {'loss': 1.832641839981079, 'accuracy': 0.4890681803226471}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 184, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 7, logs: {'loss': 1.8407318592071533, 'accuracy': 0.486660361289978}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 188, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 8, logs: {'loss': 1.8397246599197388, 'accuracy': 0.4867253601551056}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 242, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 9, logs: {'loss': 1.8410377502441406, 'accuracy': 0.48612985014915466}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 197, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 10, logs: {'loss': 1.8408420085906982, 'accuracy': 0.4859916865825653}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 202, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 11, logs: {'loss': 1.8419588804244995, 'accuracy': 0.4857322573661804}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 206, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 12, logs: {'loss': 1.838828444480896, 'accuracy': 0.4864293038845062}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 214, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 13, logs: {'loss': 1.835135817527771, 'accuracy': 0.4874844253063202}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 211, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 14, logs: {'loss': 1.8331409692764282, 'accuracy': 0.48779502511024475}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 192, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 15, logs: {'loss': 1.8328189849853516, 'accuracy': 0.4877728223800659}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 239, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 16, logs: {'loss': 1.829593539237976, 'accuracy': 0.48857319355010986}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 206, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 17, logs: {'loss': 1.827547550201416, 'accuracy': 0.4889731705188751}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 247, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 18, logs: {'loss': 1.8270574808120728, 'accuracy': 0.48901236057281494}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 217, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 19, logs: {'loss': 1.8290135860443115, 'accuracy': 0.48858362436294556}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 209, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 20, logs: {'loss': 1.8280969858169556, 'accuracy': 0.4887698292732239}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 194, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 21, logs: {'loss': 1.8289833068847656, 'accuracy': 0.4886011481285095}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 281, 26), (128, 77, 30), (128, 77, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 22, logs: {'loss': 1.828264594078064, 'accuracy': 0.48872342705726624}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 210, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 23, logs: {'loss': 1.829309344291687, 'accuracy': 0.4885270595550537}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 198, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 24, logs: {'loss': 1.829647421836853, 'accuracy': 0.4884021580219269}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 204, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 25, logs: {'loss': 1.8315863609313965, 'accuracy': 0.48783156275749207}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 186, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 26, logs: {'loss': 1.829666256904602, 'accuracy': 0.48826292157173157}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 225, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 27, logs: {'loss': 1.8305343389511108, 'accuracy': 0.48797887563705444}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 215, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 28, logs: {'loss': 1.8316295146942139, 'accuracy': 0.487588107585907}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 204, 26), (128, 80, 30), (128, 80, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 29, logs: {'loss': 1.831119418144226, 'accuracy': 0.4876115024089813}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 180, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 30, logs: {'loss': 1.8289211988449097, 'accuracy': 0.48812001943588257}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 219, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (logs_callback.py).on_train_batch_end(20) - batch: 31, logs: {'loss': 1.829311490058899, 'accuracy': 0.4880554676055908}
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 179, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 193, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 194, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 228, 26), (128, 78, 30), (128, 78, 30))
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((128, 198, 26), (128, 79, 30), (128, 79, 30))
+[INFO] - (data_generator_v2.py).fetch_names(103) - test set length: 1680
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((1, 126, 26), (1, 39, 30), (1, 39, 30))
+[INFO] - (data_generator_v2.py).fetch_names(103) - test set length: 1680
+[INFO] - (data_generator_v2.py).__getitem__(88) - Shapes: ((1, 126, 26), (1, 39, 30), (1, 39, 30))
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm_v2-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm_v2, version: 1-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm_v2/version_1
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm_v2-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm_v2, version: 1-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm_v2/version_1
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm_v2-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm_v2, version: 1-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm_v2/version_1
+[INFO] - (base_model.py).__init__(67) - model: vanilla_lstm_v2-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm_v2, version: 0-/Users/elipalchik/Documents/speech-recognition/models/vanilla_lstm_v2/version_0

@@ -17,7 +17,7 @@ class LogsCallback(tf.keras.callbacks.Callback):
         pass
 
     def on_train_batch_end(self, batch, logs=None):
-        logger.info(f"batch: {batch}, logs: {logs}")
+        #logger.info(f"batch: {batch}, logs: {logs}")
         config.document.append_metric(self.model_name, self.version, "train", "loss", logs["loss"])
         config.document.append_metric(self.model_name, self.version, "train", "accuracy", logs["accuracy"])
 

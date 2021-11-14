@@ -16,11 +16,11 @@ class BidirectionalLSTM(BaseModel):
 
     super().__init__(BidirectionalLSTM.MODEL_NAME, load_version)
 
-    encoder_inputs = Input(shape=(None, audio_dim), name="audio-input")
-    decoder_inputs = Input(shape=(None, config.NUM_CLASSES), name="text-input")
+    encoder_inputs = Input(shape=(None, audio_dim), name="audio_input")
+    decoder_inputs = Input(shape=(None, config.NUM_CLASSES), name="text_input")
     sequence_lengths = Input(shape=[])
 
-    encoder = Bidirectional(LSTM(hidden_dim, return_state=True, name="audio-encoder"))
+    encoder = Bidirectional(LSTM(hidden_dim, return_state=True, name="audio_encoder"))
     encoder_outputs, state_h, state_c = encoder(encoder_inputs)
     encoder_states = [state_h, state_c]
 

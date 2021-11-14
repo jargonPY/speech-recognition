@@ -45,7 +45,8 @@ class DataGeneratorV2(tf.keras.utils.Sequence):
     def process_audio_files(self, index):
         audio_data = []
         for file_path in self.audio_files[index * self.batch_size:(index + 1) * self.batch_size]:
-            audio_data.append(load_audio(file_path))
+            rate, audio = load_audio(file_path)
+            audio_data.append(audio)
 
         encoder_input = PreprocessAudioLayer().call(audio_data)
         return encoder_input
@@ -85,8 +86,8 @@ class DataGeneratorV2(tf.keras.utils.Sequence):
         encoder_input = self.process_audio_files(index)
         decoder_input, decoder_output = self.process_text_files(index)
         logger.info(
-            f"Shapes: {encoder_input.shape, decoder_input.shape, decoder_output.shape}")
-        return (encoder_input, decoder_input), decoder_output
+            f"Shapes: {encoder_input.shape, decoder_input.shape, decoder_output.shape}")        
+        return [encoder_input, decoder_input], decoder_output
 
     @staticmethod
     def get_file_names(mode, split):

@@ -25,7 +25,7 @@ class ModelDocumentObject():
 
   # CHANGE PATH
   # str(pathlib.Path(__file__).parents[2]) + "/models/" + model_name
-  FILE_PATH = str(pathlib.Path(__file__).parent) + "/" + "model_document_object.json"
+  FILE_PATH = str(pathlib.Path(__file__).parents[1]) + "/" + "model_document_object.json"
 
   def __init__(self):
     self.document = None
@@ -49,8 +49,8 @@ class ModelDocumentObject():
 
   def add_model(self, model_name):
     if not model_name in self.document:
-      self.document[model_name] = {"latest_version": 1}
-      self.document[model_name]["1"] = {
+      self.document[model_name] = {"latest_version": 0}
+      self.document[model_name]["0"] = {
         "train": {},
         "test": {}
       }
@@ -73,11 +73,11 @@ class ModelDocumentObject():
     try:
       return self.document[model_name]["latest_version"]
     except:
-      return 0
+      raise ValueError("Can not update version as model does not exist")
 
   def update_version(self, model_name):
     try:
-      version = self.document[model_name]["latest_version"] + 1
+      version = str(self.document[model_name]["latest_version"] + 1)
       self.document[model_name]["latest_version"] = version
       self.document[model_name][version] = {
         "train": {},
@@ -85,12 +85,12 @@ class ModelDocumentObject():
       }
       return self.document[model_name]["latest_version"]
     except:
-      return 0
+      raise ValueError("Can not update version as model does not exist")
 
   def append_metric(self, model_name, version, stage, metric, value):
     version = str(version)
     try:
-      self.document[model_name][version][stage][metric].append(value)
+       self.document[model_name][version][stage][metric].append(value)
     except:
       self.document[model_name][version][stage][metric] = [value]
 

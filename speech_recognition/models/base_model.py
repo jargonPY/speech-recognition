@@ -48,37 +48,38 @@ class BaseModel():
 
         else:
             if not os.path.exists(self.model_path):
+                # what if the model folder gets deleted but the json
+                # file still has records of the model?
                 os.mkdir(self.model_path)
                 config.document.add_model(model_name)
-                self.version = 1
+                self.version = 0
 
             else:
                 self.version = config.document.update_version(model_name)
 
             self.version_path = self.model_path + f"/version_{self.version}"
-            # throws and error every other version
-            os.mkdir(self.version_path)
+            try:
+                os.mkdir(self.version_path)
+            except:
+                if not config.DEBUG_MODE:
+                    raise ValueError("Version path already exists")
 
             logger.info(
                 f"model: {self.model_name}-{self.model_path}, version: {self.version}-{self.version_path}")
 
-    def load_weights(self):
-
-        if os.path.exists(self.version_path):
-            self.model.load_weights(self.version_path + "/checkpoint")
-            # log some of the model weights/layers to ensure proper loading of each layer
-
     def load_model(self):
-        pass
+        
+        if os.path.exists(self.version_path):
+            return tf.keras.models.load_model(self.version_path)
 
-    def train(self, split=0.9, batch_size=128, epochs=2, data_source="generator"):
+    def train(self):
 
-        if data_source == "generator":
-            train = data_pipelines.DataGeneratorV2("train", split, batch_size)
+        if self.data_source == "generator":
+            train = data_pipelines.DataGeneratorV2("train", self.split, self.batch_size)
             val = data_pipelines.DataGeneratorV2(
-                "validation", split, batch_size)
-        if data_source == "pipeline":
-            train, val = data_pipelines.data_pipeline(split, batch_size)
+                "validation", self.split, self.batch_size)
+        if self.data_source == "pipeline":
+            train, val = data_pipelines.data_pipeline(self.split, self.batch_size)
 
         checkpoint = tf.keras.callbacks.ModelCheckpoint(
             filepath=self.version_path,
@@ -88,11 +89,11 @@ class BaseModel():
         logsCallback = LogsCallback(self.model_name, self.version)
 
         self.model.compile(
-            optimizer="rmsprop", loss="categorical_crossentropy", metrics=["accuracy"])
+            optimizer=self.optimizer, loss=self.loss, metrics=self.metrics)
 
         history = self.model.fit(train,
                                  validation_data=val,
-                                 epochs=epochs,
+                                 epochs=self.epochs,
                                  max_queue_size=1,
                                  workers=1,
                                  use_multiprocessing=True,
@@ -100,21 +101,23 @@ class BaseModel():
         return history
 
     def test(self):
-        # combine predict and evaluate
-        test_set = utils.DataGenerator.get_test_files()
-        self.predict(test_set[0][0])  # temp for debugging
+        # combine inference and evaluation
+        test_generator = data_pipelines.DataGeneratorV2("test", split=0.9, batch_size=1)
+        for index in range(test_generator.__len__()):
+            input_data, decoder_output = test_generator.__getitem__(index)
+            prediction = self.inference(input_data[0])
 
     def evaluate(self):
         pass
 
     def inference(self, audio_input):
         """
-          For inference the encoder model and the decoder model should make
+          For inference the encoder model and the decoder model could make
           the preprocessing layers part of the model
         """
 
-        audio_input = PreprocessAudio().preprocess_file(audio_input)
-        audio_input = np.reshape(audio_input, (1, -1, audio_input.shape[1]))
+        # audio_input = PreprocessAudio().preprocess_file(audio_input)
+        # audio_input = np.reshape(audio_input, (1, -1, audio_input.shape[1]))
         encoder_state = self.encoder_model.predict(audio_input)
 
         # (1 sample, 1 timestep, NUM_CLASSES)

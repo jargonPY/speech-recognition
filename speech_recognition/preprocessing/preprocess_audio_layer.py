@@ -143,7 +143,7 @@ class PreprocessAudioLayer(tf.keras.layers.Layer):
 
   def call(self, audio_samples):
 
-    for sample in audio_samples:
+    for index, sample in enumerate(audio_samples):
       self.number_of_sample = len(sample)
       sample = self.boost(sample)
       sample = self.rolling_window(sample)
@@ -152,3 +152,5 @@ class PreprocessAudioLayer(tf.keras.layers.Layer):
       nfft = self.compute_nfft()
       sample = self.spectrum(sample, nfft)
       sample = self.mel_binning(sample, nfft)
+      audio_samples[index] = sample
+    return tf.keras.preprocessing.sequence.pad_sequences(audio_samples)

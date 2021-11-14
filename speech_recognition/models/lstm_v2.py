@@ -1,22 +1,20 @@
-from models.base_model import BaseModel
-import config
 import sys
 import pathlib
 import tensorflow as tf
 from tensorflow.keras.layers import Input, LSTM, Dense
 sys.path.append(str(pathlib.Path(__file__).parents[1]))
 sys.path.append(str(pathlib.Path(__file__).parents[2]))
-
+import config
+from models.base_model import BaseModel
 
 class VanillaLSTMV2(BaseModel):
 
     MODEL_NAME = "vanilla_lstm_v2"
 
-    def __init__(self, mode, load_version, audio_dim=26, hidden_dim=32):
+    def __init__(self, mode, load_version, **kwargs):
 
         super().__init__(VanillaLSTMV2.MODEL_NAME, load_version)
-        self.audio_dim = audio_dim
-        self.hidden_dim = hidden_dim
+        self.__dict__.update(kwargs)
 
         if mode == "train":
             if load_version:
@@ -24,18 +22,19 @@ class VanillaLSTMV2(BaseModel):
             else:
                 self.model = self.build_training_model()
         else:
-            model = tf.keras.models.load_model(self.version_path)
+            model = self.load_model()
             self.encoder_model, self.decoder_model = self.build_inference_model()
             weights = model.get_weights()
-            self.encoder_model.set_weights(weights)
-            self.decoder_model.set_weights(weights)
+
+            self.encoder_model.set_weights(weights[:3])
+            self.decoder_model.set_weights(weights[3:])
 
     def encoder(self):
 
         encoder_inputs = Input(
-            shape=(None, self.audio_dim), name="audio-input")
+            shape=(None, self.audio_dim), name="audio_input")
         encoder = LSTM(self.hidden_dim, return_state=True,
-                       name="audio-encoder")
+                       name="audio_encoder")
         encoder_outputs, state_h, state_c = encoder(encoder_inputs)
         encoder_states = [state_h, state_c]
         return encoder_inputs, encoder_states
@@ -43,7 +42,7 @@ class VanillaLSTMV2(BaseModel):
     def decoder(self, initial_state):
 
         decoder_inputs = Input(
-            shape=(None, config.NUM_CLASSES), name="text-input")
+            shape=(None, config.NUM_CLASSES), name="text_input")
         decoder_lstm = LSTM(self.hidden_dim, return_sequences=True,
                             return_state=True, name="decoder")
         decoder_outputs, state_h, state_c = decoder_lstm(
